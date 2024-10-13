@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+.section-center {
+  margin: 4rem auto;
+  max-width: 600px;
+  width: 90vw;
+}
+
+.grocery-form {
+  display: grid;
+  gap: 1rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.grocery {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.submit-btn {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.clear-btn {
+  background-color: #d9534f;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.grocery-list {
+  list-style: none;
+  padding: 0;
+}
+
+.grocery-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: #fff;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+.btn-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.alert {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.alert-danger {
+  background-color: #d9534f;
+  color: white;
+}
