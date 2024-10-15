@@ -68,7 +68,15 @@ function App() {
     setEditID(id);
     setName(specificItem.title);
   };
-
+  useEffect(() => {
+    if (alert.show) {
+      const timeout = setTimeout(() => {
+        console.log(1);
+        setAlert({ show: false, msg: "", type: "" });
+      }, 3000);
+      return () => clearTimeout(timeout);
+    }
+  }, [alert]);
   // Сохранение списка задач в LocalStorage
   useEffect(() => {
     localStorage.setItem("list", JSON.stringify(list));
